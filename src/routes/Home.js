@@ -1,9 +1,9 @@
-/*import React from 'react';
+import React from 'react';
 import axios from 'axios';
-import Movie from './components/Movie';
-import './App.css';
+import Movie from '../components/Movie';
+import './Home.css';
 
-class App extends React.Component { 
+class Home extends React.Component { 
   state = {
     isLoading: true,
     movies: [],
@@ -47,25 +47,4 @@ class App extends React.Component {
   }
 }
 
-export default App;*/
-
-import React from 'react';
-import './App.css';
-import { HashRouter, Route } from 'react-router-dom';
-import About from './routes/About';
-import Home from './routes/Home';
-import Navigation from './components/Navigation';
-import Detail from './routes/Detail';
-
-function App() {
-  return (
-    <HashRouter>
-      <Navigation />
-      <Route path="/" exact={true} component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/movie-detail" component={Detail} />
-    </HashRouter>
-  );
-}
-
-export default App;
+export default Home;
